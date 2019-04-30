@@ -8,7 +8,7 @@ const Uploads = ({ pendingFiles, completedFiles, actions }) => {
 	const pendingFilesTotal = pendingFiles.length;
 	return (
 		<React.Fragment>
-			<label for="uploader" class="uploader"><i className="fas fa-camera-retro" aria-hidden="true"></i> Add Photos</label>
+			<label for="uploader" className="uploader"><i className="fas fa-camera-retro" aria-hidden="true"></i> Add Photos</label>
 			<Uploader id="uploader" className="uploader-input" upload={actions.upload} />
 
 			{pendingFilesTotal > 0 && <h2>Photos In Progress</h2>}
